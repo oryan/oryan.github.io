@@ -26,8 +26,9 @@ small {
 }
 #wrapper {
   margin:0px auto 0px;
+  padding: 0px 10px;
   width:100%;
-  max-width:600px;
+  max-width:620px;
   text-align: center;
   position:relative;
 }
