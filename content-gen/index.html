@@ -69,10 +69,10 @@
       let summary = `<h5>📝 Your Content:&nbsp;</h5><div class="card">` + parseTemplate(summaryTemplate, customData) + ` </div>`;
       let choosestructure = weightedChooseFrom(structures);
       let choosemodel = chooseFrom(mentalmodels);
-      if(choosemodel.quote !== ``){
-        modelquote =  `&nbsp;<br><br>` + choosemodel.quote;
+      if(choosemodel.insight !== ``){
+        modelinsight =  `&nbsp;<br><br>` + choosemodel.insight;
       } else {
-        modelquote = ``;
+        modelinsight = ``;
       }
 
       let structure = `<h5>🛠️ Structure Type:&nbsp;</h5> `
@@ -83,7 +83,7 @@
                     +`</h5><div class="card padding-bottom"><b>`
                     + choosemodel.title + `: </b>&nbsp;<br>`
                     + choosemodel.description
-                    + modelquote
+                    + modelinsight
                     + `&nbsp;`
                     + `<div><a class="readMore" target="_blank" href="https://www.google.com/search?q='` + choosemodel.title + `' mental model">More reading ➜</a></div>`
                     + `</div>`;
