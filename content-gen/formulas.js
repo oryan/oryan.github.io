@@ -5,7 +5,7 @@ const formulas = [{
   },
   {
       name: `The Credible Gap`,
-      description: `<b>Context</b>: Consider the context<br><b>Attention</b>: Grab attention<br><b>Desire: Move the reader swiftly to desire a solution to their problem<br><b>The Gap</b>: Present the consequence of failing to act<br><b>Solution</b>: Present the solution, telling only as much as is necessary to get to the next step<br><b>Action</b>: Call the prospect to act<br>Remember to always be credible in every step.`,
+      description: `<b>Context</b>: Consider the context<br><b>Attention</b>: Grab attention<br><b>Desire</b>: Move the reader swiftly to desire a solution to their problem<br><b>The Gap</b>: Present the consequence of failing to act<br><b>Solution</b>: Present the solution, telling only as much as is necessary to get to the next step<br><b>Action</b>: Call the prospect to act<br>Remember to always be credible in every step.`,
       weight: 10
   },
   {
