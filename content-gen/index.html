@@ -7,7 +7,8 @@
     <script src="hooks.js?v=001"></script>
     <script src="summaries.js?v=001"></script>
     <script src="touchpoints.js?v=001"></script>
-    <script src="structures.js?v=001"></script>
+    <script src="tones.js?v=001"></script>
+    <script src="formulas.js?v=001"></script>
     <script src="mentalmodels.js?v=001"></script>
     <script src="tips.js?v=001"></script>
     <meta property="og:image" content="thumbnail.jpg">
@@ -71,7 +72,8 @@
       let tip = `<div id="tip">💡 `+ chooseFrom(tips) +`</div>`;
       let hook = `<h5>👁️ Hook:</h5><div class="card">` + chooseFrom(hooks) + `</div>`;
       let summary = `<h5>📝 Your Content:&nbsp;</h5><div class="card">` + parseTemplate(summaryTemplate, customData) + ` </div>`;
-      let choosestructure = weightedChooseFrom(structures);
+      let choosetone = weightedChooseFrom(tones);
+      let chooseformula = weightedChooseFrom(formulas);
       let choosemodel = chooseFrom(mentalmodels);
       if(choosemodel.insight !== ``){
         modelinsight =  `&nbsp;<br><br>` + choosemodel.insight;
@@ -79,10 +81,14 @@
         modelinsight = ``;
       }
 
-      let structure = `<h5>🛠️ Structure Type:&nbsp;</h5> `
+      let tone = `<h5>📐 Angle:&nbsp;</h5> `
                     +`<div class="structure"><b>`
-                    + choosestructure.name + `: </b>&nbsp; <br>`
-                    + choosestructure.description + `</div>`;
+                    + choosetone.name + `: </b>&nbsp; <br>`
+                    + choosetone.description + `</div>`;
+      let formula = `<h5>🛠️ Formula:&nbsp;</h5> `
+                    +`<div class="structure"><b>`
+                    + chooseformula.name + `: </b>&nbsp; <br>`
+                    + chooseformula.description + `</div>`;
       let mentalModel = `<h5>🧠 Mental Model:&nbsp;`
                     +`</h5><div class="card padding-bottom"><b>`
                     + choosemodel.title + `: </b>&nbsp;<br>`
@@ -114,7 +120,8 @@
                   tip
                   + hook
                   + summary
-                  + structure
+                  + tone
+                  + formula
                   + mentalModel
                   + touchpoints
       );

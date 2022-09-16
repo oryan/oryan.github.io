@@ -138,7 +138,7 @@ const summaries = [
 `Share a list of Pros/Cons. Bonus points for inverting them or adding  twist.`,
 `Call out a specific audience.`,
 `Call out a specific situation.`,
-`Go Live.`,
+`Go live and take questions from your audience.`,
 `Post a roundup of people you admire.`,
 `Share do's and don'ts.`,
 `Spotlight companies that stand out. Point out what they did to grab your attention or how they change the game.`,
@@ -154,7 +154,6 @@ const summaries = [
 `Create a top 10 list.`,
 `Create or share an infographic.`,
 `Share the story of how you got to where you are.`,
-`Welcome the newbies.`,
 `Spotlight how a customer uses your product/service.`,
 `Show what happens if you DON'T make a move.`,
 `Talk about a common misconception in your industry.`,
@@ -172,5 +171,12 @@ const summaries = [
 `Share advice on what your audience needs to STOP doing`,
 `Describe what you would do if you had to start over today. Common pitfalls to avoid? Hard lessons learned?`,
 `Share a short list of positive results that doing X has done for you.`,
-`Outline an effective framework for accomplishing X in a way that your audience can do on their own.`
+`Outline an effective framework for accomplishing X in a way that your audience can do on their own.`,
+`How can people do something, step-by-step?`,
+`Inspire people to take action through a story.`,
+`Reverse engineer something and show how it works.`,
+`What are things you believe that the majority don't?`,
+`What are you noticing in your industry?`,
+`What do you think the future will look like?`,
+`What questions are you often asked?`
 ];

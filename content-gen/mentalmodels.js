@@ -1322,5 +1322,56 @@ const mentalmodels = [{
     title: `The Dunning-Kruger effect`,
     description: `Why can we not perceive our own abilities? The Dunning-Kruger effect occurs when a person's lack of knowledge and skills in a certain area cause them to overestimate their own competence. By contrast, this effect also causes those who excel in a given area to think the task is simple for everyone, and underestimate their relative abilities as well.`,
     insight: `As a result of the Dunning-Kruger effect, you may not know what you're good at, because you assume that what comes easily to you also comes easily to everyone else. You are therefore robbed of the ability to spot your own specialties and talents.<br><br>Moreover, when you excel at what is challenging to you, you might accidentally fall prey to the belief that that thing is where your talents lie. In reality, you may just be a below-average performer finally approaching average levels.Thinking you are better than you are at something can cause you to miss out on opportunities to learn from others, who truly are more skilled or more knowledgeable. Furthermore, thinking you are average at something when you really have great skill can cause you to miss opportunities to teach and spread knowledge to others.`
+},
+{
+    title: `Agenda-Setting Theory`,
+    description: `Mainstream media sets the agenda of public discourse.<br>The more attention the media gives to certain issues, the more likely the public is to consider them important.<br>Don't pay blind attention to what's on the "agenda" and forget what's not being said.`,
+    insight: `"The press may not be successful most of the time in telling people what to think, but it is stunningly successful in telling them what to think about." - Bernard Cohen`
+},
+{
+    title: `The Ergodic Switch`,
+    description: `In an ergodic scenario, the average outcome of a group is the same as the average outcome of the individual over time. <br>We are taught to think that most systems are ergodic.
+In reality, most human systems are non-ergodic.<br>Don't blindly believe in averages.`,
+    insight: `What works on a group level can have the opposite effect on an individual level. `
+},
+{
+    title: `Convexity`,
+    description: `Convex payoffs have larger gains than pains-the potential upside is greater than the downside.<br>The majority seek to cap downside by entering conformist professions but in doing so, cap their upside too.`,
+    insight: `Lesson: Incorporate some calculated risks in your plan.`
+},
+{
+    title: `Wisdom of the Crowd`,
+    description: `The intelligence of a diverse group is superior to that of any of the individuals within the group. A useful framework for solving difficult problems.`,
+    insight: `When possible, seek multiple diverse and alternative perspectives for better solutions.`
+},
+{
+    title: `The Paradox of Abundance`,
+    description: `The average quality of information is decreasing over time. But the highest quality stuff gets better and better.`,
+    insight: `Abundance is simultaneously bad for the 'median' consumer but good for the 'conscious, discerning' consumer who filters out noise.`
+},
+{
+    title: `Google Scholar Effect`,
+    description: `Highly cited papers appear in top positions and gain ever more citations. New papers struggle to appear in top positions and therefore get less attention, regardless of their contribution to their fields.`,
+    insight: `Where else is a cumulative advantage at play?`
+},
+{
+    title: `Curse of Knowledge`,
+    description: `Once we know something, we assume everyone else knows it, too. It's why some experts can't explain their field in simple terms and people don't share knowledge that could benefit others.`,
+    insight: `Lesson: There are always people to teach and people to learn from.`
+},
+{
+    title: `Predictive Coding`,
+    description: `Our perception replaces the unknown with the expected to help us organize our experience of the world efficiently.<br>Ask, "What might you be over-predicting?"`,
+    insight: `"You experience, in some sense, the world that you expect to experience." -Andy Clark`
+},
+{
+    title: `Locus of Control`,
+    description: `Internal: You believe that outcomes are within your control.<br>External: You believe that outcomes are outside of your control.<br>The more control you believe you have, the less likely you are to conform to the status quo.`,
+    insight: `Seek to believe in control.`
+},
+{
+    title: ``,
+    description: ``,
+    insight: ``
 }
 ]
