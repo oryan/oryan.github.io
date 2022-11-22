@@ -1,0 +1,151 @@
+<html>
+  <head>
+    <link rel="stylesheet" media="all" href="style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="titles.js?v=001"></script>
+    <script src="summaries.js?v=001"></script>
+    <script src="struggles.js?v=001"></script>
+    <script src="plots.js?v=001"></script>
+    <meta property="og:image" content="thumbnail.jpg">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1080">
+
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="container">
+        <div id="output">
+          Loading...
+        </div>
+        <div id="controls">
+            <div id="generate" class="button">Generate a new episode...</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    // example data
+    var customData = {
+        goodGuy: {
+          crewName: "the crew",
+          shipName: "Oddessy",
+          orgName: "Federated Planets",
+          hq: "Earth",
+          boss: "General Billings", // The Sage
+          one: "James", // The Hero
+          two: "Hana", // The Friend
+          three: "Jenna", // The Warrior
+          four: "Matt", // The Intelectual
+          five: "Aaron" // The Rogue
+        },
+        ally: {
+          one: "Luna Colonists",
+          two: "Mars Colonists",
+          three: "Jupiter One crew",
+          four: "Ganemede Outpost",
+          five: "Titan Consortium Personell"
+        },
+  		badGuy: {
+  			one: "Poets Fleet",
+  			two: "Free Anarchists",
+  			three: "Gaal Corporatists",
+  			four: "Gia Alliance",
+        five: "Yakuza"
+  		},
+  		planet: {
+  			one: "Equestria",
+  			two: "Primordia",
+  			three: "Crestal",
+  			four: "Olympus Prime",
+        five: "Palara"
+  		}
+    }
+
+    // Choose random element from object
+    function chooseFrom(obj) {
+      return obj[parseInt(Math.random()*(obj.length))]
+    }
+
+    // Weighted Random choice from objects
+    function weightedChooseFrom(obj){
+      // First, we loop the main dataset to count up the total weight.
+      // We're starting the counter at one because the upper boundary of Math.random() is exclusive.
+      let total = 0;
+      for (let i = 0; i < obj.length; ++i) {
+          total += obj[i]['weight'];
+      }
+      // Total in hand, we can now pick a random value akin to our random index from before.
+      const threshold = Math.random() * total;
+      // Now we just need to loop through the main data one more time until we discover which value would live within this particular threshold. We need to keep a running count of weights as we go, so let's just reuse the "total" variable since it was already declared.
+      total = 0;
+      for (let i = 0; i < obj.length - 1; ++i) {
+          // Add the weight to our running total.
+          total += obj[i]['weight'];
+          // If this value falls within the threshold, we're done!
+          if (total >= threshold) {
+              return obj[i];
+          }
+      }
+      // Wouldn't you know it, we needed the very last entry!
+      return obj[obj.length - 1];
+    }
+
+    // Template function
+    function parseTemplate(template, data) {
+      return template.replace(/\{([\w\.]*)\}/g, function(str, key) {
+        var keys = key.split("."), v = data[keys.shift()];
+        for (var i = 0, l = keys.length; i < l; i++) v = "<em>" + v[keys[i]] + "</em>";
+        return (typeof v !== "undefined" && v !== null) ? v : "";
+      });
+    }
+
+    function generate(){
+      let characters = [customData.goodGuy.one, customData.goodGuy.two, customData.goodGuy.three, customData.goodGuy.four, customData.goodGuy.five];
+      let summaryTemplate = chooseFrom(summaries);
+      let title = `<h2>` + chooseFrom(titles) + `</h2>`;
+      let summary = parseTemplate(summaryTemplate, customData);
+      let choosePlot = weightedChooseFrom(plots);
+      let plot = `<h5>Plot Type:</h5><div class="plot"><em><b>`
+                    + choosePlot.name
+                    + `</b></em><br>`
+                    + choosePlot.description
+                    + `</div>`;
+      let struggles = "";
+      let crewStruggle = `<div class="struggle"><em>`
+                    + customData.goodGuy.crewName + `</em> `
+                    + chooseFrom(strugglesList)
+                    + `</div>`;
+
+      for (var i = 0; i < characters.length; i++) {
+        struggles = struggles
+                    + `<div class="struggle"><em>`
+                    + characters[i] + `</em> `
+                    + chooseFrom(strugglesList)
+                    + `</div>`;
+      };
+
+      struggles = `<h5>Character Threads:</h5><div id="struggles-grid">`
+                  + struggles
+                  + crewStruggle
+                  + `</div>`;
+
+
+      // Add all content to #output as HTML
+      $('#output').html(
+                  title
+                  + summary
+                  + plot
+                  + struggles
+      );
+    }
+
+    $('#generate').on('click', function () {
+        generate();
+    });
+
+    // Initiate
+    $(function() {
+        generate();
+    });
+  </script>
+</html>
