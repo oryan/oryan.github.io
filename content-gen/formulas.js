@@ -1,7 +1,7 @@
 const formulas = [{
-    name: `AIDA`,
-    description: `<b>Attention</b>: Jar the reader out of their boring ol' lives<br><b>Interest</b>: Engage their mind with unusual, counter-intuitive or fresh info<br><b>Desire</b>: Engage their heart so they want what you're offering<br><b>Action</b>: Ask them to take the next step`,
-    weight: 10
+      name: `AIDA`,
+      description: `<b>Attention</b>: Jar the reader out of their boring ol' lives<br><b>Interest</b>: Engage their mind with unusual, counter-intuitive or fresh info<br><b>Desire</b>: Engage their heart so they want what you're offering<br><b>Action</b>: Ask them to take the next step`,
+      weight: 10
   },
   {
       name: `The Credible Gap`,

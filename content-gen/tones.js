@@ -34,6 +34,16 @@ const tones = [{
     weight: 10
   },
   {
+    name: `\u{1F393} How-To Guide`,
+    description: `Teach your audience how to do desirable things. Detail and context is the goal.`,
+    weight: 10
+  },
+  {
+    name: `\u{1F389} Recommendation`,
+    description: `Recommending tools, resources, products, and strategies tends to perform well.`,
+    weight: 10
+  },
+  {
     name: `\u{1F522} Listicle <small>(use sparingly)</small>`,
     description: `A list of things (top books, people, podcasts, etc.)`,
     weight: 1

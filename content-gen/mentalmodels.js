@@ -1370,6 +1370,36 @@ In reality, most human systems are non-ergodic.<br>Don't blindly believe in aver
     insight: `Seek to believe in control.`
 },
 {
+    title: `Deliberate Ignorance`,
+    description: `Deliberate ignorance is intentionally ignoring a fact when we have every reason to believe its existence, it's choosing to not believe.`,
+    insight: `We do this to protect ourselves; knowing too much can detriment our emotional wellbeing.`
+},
+{
+    title: `Bayesian Updating`,
+    description: `Updating beliefs about the probability of a certain event as new information becomes available.<br>We can't know reality perfectly, but we can constantly update our understanding with new information.`,
+    insight: `Bayesian updating implies that experimentation is essential.`
+},
+{
+    title: `The Shallowing Hypothesis`,
+    description: `Texting, social media, and general internet usage have promoted rapid shallow thought and less moral thinking.`,
+    insight: `"All of humanity's problems stem from man's inability to sit quietly in a room alone." -Blaise Pascal`
+},
+{
+    title: `Vulnerability`,
+    description: `Vulnerability is the currency of human connection.`,
+    insight: `The more vulnerable you allow yourself to be, the more connected to others you will feel.`
+},
+{
+    title: `Brokerage`,
+    description: `Ever wondered how power is created in a social network?`,
+    insight: `Brokers, those with connections that bridge networks, are typically the most powerful because of informational advantages.`
+},
+{
+    title: `Miles's Law`,
+    description: `"Where you stand depends on where you sit."`,
+    insight: `Human's social views (and behaviour) arise from the settings in which people live and work, especially when those settings create incentives for particular beliefs, priorities, or justifications.`
+},
+{
     title: ``,
     description: ``,
     insight: ``
